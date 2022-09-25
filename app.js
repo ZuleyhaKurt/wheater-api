@@ -42,7 +42,7 @@ const renderCity = (data) => {
     console.log(nameC)
 
     main.innerHTML +=` 
-    <div class="card">
+    <div class="card  ">
         <div class="name">
             <h5>${nameC}</h5>
         </div>
