@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.big{
+width: 100vw;   
+height: 100vh;
+background-image: url(https://www.fibhaber.com/images/haberler/2018/04/bol_gunesli_gunler_geliyor_iste_nevsehir_de_hava_durumu_h85815_7c831.jpg) ;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0.9;
+display: flex;
+justify-content: center;
+}
+.main{
+    background-color: rgba(0, 0, 0, 0.671);
+    width: 80%;
+    height: 80%;
+    margin-top:5%;
+    padding: 1rem;
+   
+    
+   
+}
+.search{
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    
+    
+}
+
+.search .city{
+    width: 80%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.001);
+    border: none;
+    border-bottom: 3px solid #eee;
+    color:#eee;
+    font-size: 1.5rem;
+    outline: 0;
+    font-weight: 500;
+    
+}
+
+.buton{
+    display: flex;
+    align-items:flex-end;
+  }
+.btn{
+    background-color: rgba(0, 0, 0, 0.001);
+    border: none;
+    color:#eee ;
+    font-size: 2rem;
+}
+.content{
+    word-wrap: wrap;
+    overflow: auto;
+    display: flex;
+    gap:1rem;
+    margin:2rem;
+    height: 70%;
+}
+.icon{
+    padding: 0;
+    margin: 0;
+    padding-left: 0 !important;
+    
+    border-radius: 1rem;
+    width: 7rem;
+    
+}
+
+
+.list-group-item{
+    background-color: #fff !important;
+}
+
+.main h1{
+    color: azure;
+    text-align: center;
+}
+.card{
+    background-color:white;
+    width: 25%;
+    height:95%;
+    border-radius: 2rem;
+
+}
+.name{
+padding: 0.5rem 0 0 2rem;
+font-size: 2rem;
+}
+.tempature{
+padding: 0.5rem 0 0 2rem;
+font-size: 2rem;
+}
+.sky{
+padding: 0 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.sky p{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+@media screen  and (max-width:992px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .card{
+        width: 70%;
+    }
+    .main{
+        height: 100%;
+    }
+}
