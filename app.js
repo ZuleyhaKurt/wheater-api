@@ -2,13 +2,14 @@
 const input = document.querySelector(".city")
 const buton = document.querySelector(".btn")
 const main = document.querySelector(".content")
+
 let name1;
 let nameC;
 let counter = 0;
 
 const fetchCity = (name) => {
     if (counter > 4) {
-        alert("maximum entry is 5")
+        alert("maximum number of entries ")
     }
     else{
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=8679780ea9ee4fcdc4514f93f08f4e3f`
@@ -47,9 +48,10 @@ const renderCity = (data) => {
     console.log(nameC)
 
     main.innerHTML +=` 
-    <div class="card  ">
+    <div class="card ">
         <div class="name">
             <h5>${nameC}</h5>
+            <i class="fa-solid fa-xmark"></i>
         </div>
         <div class="tempature">
             ${tempC}&#8451
@@ -81,5 +83,13 @@ const renderCity = (data) => {
     }
            
    })
+    const content=document.querySelector(".content")
 
+    content.addEventListener("click", (e) => {
+    
+    console.log(e.target)
+    if (e.target.className=="fa-solid fa-xmark") {
+           e.target.parentElement.parentElement.remove()
+       }
+   })
 

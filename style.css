@@ -94,8 +94,10 @@ justify-content: center;
 
 }
 .name{
-padding: 0.5rem 0 0 1rem;
+padding: 0.5rem 0.5rem 0 1rem;
 font-size: 2rem;
+display: flex;
+justify-content: space-between;
 }
 .tempature{
 padding: 0.5rem 0 0 1rem;
