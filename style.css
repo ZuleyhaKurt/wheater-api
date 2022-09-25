@@ -21,8 +21,7 @@ justify-content: center;
     width: 80%;
     height: 80%;
     margin-top:5%;
-   flex-wrap: wrap;
-   overflow: auto;
+  
    
    
     
@@ -112,6 +111,7 @@ align-items: center;
 .sky p{
     padding: 1rem;
     font-size: 1.5rem;
+    color: rgb(30, 140, 190);
 }
 
 @media screen  and (max-width:901px){
@@ -130,6 +130,8 @@ align-items: center;
     }
     .main{
         height: 95%;
+        flex-wrap: wrap;
+        overflow: auto;
        
     }
     .search{
